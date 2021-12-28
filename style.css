@@ -1,0 +1,209 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-left: 30%;
+}
+
+.items {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 80px;
+}
+
+.block {
+  height: 100px;
+  display: flex;
+  background-color: #444;
+  color: #fff;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.box {
+  height: 110px;
+  width: 110px;
+}
+
+.box-1 {
+  animation-name: skewInfinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: blue;
+}
+
+.box-2 {
+  animation-name: skewyInfinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: red;
+}
+
+.box-3 {
+  animation-name: rotateInfinite;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: green;
+}
+
+.box-4 {
+  animation-name: incheight;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: black;
+}
+
+.box-5 {
+  animation-name: incwidth;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: yellowgreen;
+}
+
+.box-6 {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: purple;
+}
+
+.b-1,
+.b-2 {
+  transition: all 2s;
+}
+
+.b-3 {
+  transition: all 2s ease-in;
+}
+.b-4 {
+  transition: all 2s ease-out;
+}
+.b-5 {
+  transition: all 2s ease-in-out;
+}
+.b-6 {
+  transition: all 2s ease;
+}
+
+.b-7 {
+  transition: all 2s ease;
+  transition-delay: 2s;
+}
+
+.b-1:hover,
+.b-3:hover,
+.b-4:hover,
+.b-5:hover,
+.b-6:hover,
+.b-7:hover {
+  width: 300px;
+}
+
+.b-2:hover {
+  width: 300px;
+  height: 200px;
+}
+
+@keyframes incwidth {
+  0% {
+    width: 50px;
+  }
+
+  50% {
+    width: 80px;
+  }
+
+  100% {
+    width: 50px;
+  }
+}
+
+@keyframes incheight {
+  0% {
+    height: 50px;
+  }
+
+  50% {
+    height: 80px;
+  }
+
+  100% {
+    height: 50px;
+  }
+}
+
+@keyframes skewInfinite {
+  0% {
+    transform: skew(20deg);
+  }
+
+  50% {
+    transform: skew(-20deg);
+  }
+
+  100% {
+    transform: skew(20deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes skewyInfinite {
+  0% {
+    transform: skewY(20deg);
+  }
+
+  50% {
+    transform: skewY(-20deg);
+  }
+
+  100% {
+    transform: skewY(20deg);
+  }
+}
